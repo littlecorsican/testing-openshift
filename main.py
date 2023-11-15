@@ -5,7 +5,7 @@ def job():
     print("I'm working...")
     print(datetime.now())
     f = open("demofile2.txt", "a")
-    f.write(f"bla bla")
+    f.write(f"bla bla \n")
     f.close()
 
 schedule.every(10).minutes.do(job)
